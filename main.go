@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	n := flag.Int("n", 1, "n: the number of rows")
-	sep := flag.String("d", "\t", "d: separator of output")
+	n := flag.Int("n", 1, "the number of rows")
+	sep := flag.String("d", "\t", "separator")
 	flag.Parse()
 
 	s := bufio.NewScanner(os.Stdin)
